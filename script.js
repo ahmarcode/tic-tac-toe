@@ -12,34 +12,35 @@
                 [3,5,7]
 */
 let turn = 0;
-function myTurn(turn)
-{
+function symbol(index,turn){
     const myName = document.getElementById('pTurn');
-    if(turn%2===0)
+
+    if(turn%2===0) 
     {
         myName.textContent = 'A';
+        index.textContent = 'x';
     }
     else
     {
         myName.textContent = 'B';
+        index.textContent = 'o';
     }
+    // myTurn(turn);
 }
+// const one = document.getElementById('ele1');
+// one.addEventListener('click', () => {
+//     symbol(one, turn++);
+// })
+// const two = document.getElementById('ele2');
+// two.addEventListener('click', () => {
+//     symbol(two, turn++);
+// })
 
-const one = document.getElementById('ele1');
-one.addEventListener('click', () => {
-    // console.log('clicked!!')
-    
-    if(turn%2===0) 
-    {
-        one.textContent = 'x';
-        
-    }
-    else
-    {
-        one.textContent = 'o';
-    }
-    myTurn(turn);
-    turn++;
-})
-
-// Checking winning
+const infi = document.getElementsByClassName('item');
+console.log(infi);
+for(let i=0; i<infi.length; i++){
+    const ex = infi[i];
+    ex.addEventListener('click', () => {
+        symbol(ex, turn++);
+    })
+}
