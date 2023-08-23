@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- <script src="script.js" defer></script> -->
-
+    
 </head>
 
 <body>
     <h1>Tic Tac Toe</h1>
+    <h2>Status: <span></span></h2>
     <h3>Current Turn: <span id="pTurn">_</span></h3>
+    <div id="matrix">
     <div id="container">
-        <div id="box-1" class="item"></div>
-        <div id="box-2" class="item"></div>
-        <div id="box-3" class="item"></div>
-        <div id="box-4" class="item"></div>
-        <div id="box-5" class="item"></div>
-        <div id="box-6" class="item"></div>
-        <div id="box-7" class="item"></div>
-        <div id="box-8" class="item"></div>
-        <div id="box-9" class="item"></div>
+        <div boxNum='1' id="box-1" class="item"></div>
+        <div boxNum='2' id="box-2" class="item"></div>
+        <div boxNum='3' id="box-3" class="item"></div>
+        <div boxNum='4' id="box-4" class="item"></div>
+        <div boxNum='5' id="box-5" class="item"></div>
+        <div boxNum='6' id="box-6" class="item"></div>
+        <div boxNum='7' id="box-7" class="item"></div>
+        <div boxNum='8' id="box-8" class="item"></div>
+        <div boxNum='9' id="box-9" class="item"></div>
     </div><br>
+</div>
     <!-- <button>Reset</button> -->
-    <button type="button" onClick="window.location.reload()">Erase</button>
-    <script src="./script2.js" defer></script>
+    <button type="button" onClick="window.location.reload()">Restart!!</button>
+    <script src="script.js" defer></script>
+    <!-- <script src="./script2.js" defer></script> -->
 </body>
 
 </html>
